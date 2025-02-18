@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hoverable Sidenav Buttons</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: white;
+      }
+
+      .container {
+        border: 2px solid black;
+        width: 700px;
+        height: 400px;
+        padding: 20px;
+        display: flex;
+        position: relative;
+      }
+
+      .sidenav {
+        position: absolute;
+        left: 0;
+        top: 50px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .sidenav a {
+        width: 40px;
+        height: 40px;
+        margin: 5px 0;
+        text-decoration: none;
+        text-align: center;
+        color: white;
+        font-size: 18px;
+        line-height: 40px;
+        transition: 0.3s;
+        border-radius: 5px;
+        overflow: hidden;
+      }
+
+      .sidenav a:hover {
+        width: 120px;
+      }
+
+      .green {
+        background-color: green;
+      }
+      .blue {
+        background-color: rgb(0, 179, 255);
+      }
+      .red {
+        background-color: red;
+      }
+      .gray {
+        background-color: rgb(20, 18, 18);
+      }
+
+      .content {
+        margin-left: 60px;
+        padding-top: 20px;
+      }
+
+      h1 {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 0;
+      }
+
+      p {
+        font-size: 16px;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidenav">
+        <a href="#" class="green"></a>
+        <a href="#" class="blue"></a>
+        <a href="#" class="red"></a>
+        <a href="#" class="gray"></a>
+      </div>
+
+      <div class="content">
+        <h1>Hoverable Sidenav Buttons</h1>
+        <p>Hover over the buttons in the left side navigation to open them.</p>
+      </div>
+    </div>
+  </body>
+</html>
