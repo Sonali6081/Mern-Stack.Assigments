@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .title-container {
+        text-align: center;
+        color: blue;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .container {
+        width: 50%;
+        margin: auto;
+        border: 1px solid black;
+        padding: 20px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      td {
+        padding: 8px;
+        border-bottom: 1px solid #ddd;
+      }
+      td:first-child {
+        border-right: 2px solid black;
+        font-weight: bold;
+        width: 40%;
+      }
+      input,
+      select,
+      textarea {
+        width: 100%;
+        padding: 5px;
+      }
+      .checkbox-label {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid #ddd;
+        padding: 5px;
+      }
+      .register-btn {
+        text-align: center;
+        margin-top: 15px;
+      }
+      .outside-box {
+        text-align: center;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title-container">Registration Form</div>
+    <div class="container">
+      <form>
+        <table>
+          <tr>
+            <td>First Name</td>
+            <td><input type="text" name="first_name" required /></td>
+          </tr>
+          <tr>
+            <td>Last Name</td>
+            <td><input type="text" name="last_name" required /></td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td><input type="email" name="email" required /></td>
+          </tr>
+          <tr>
+            <td>Password</td>
+            <td><input type="password" name="password" required /></td>
+          </tr>
+          <tr>
+            <td>Re-enter Password</td>
+            <td><input type="password" name="repassword" required /></td>
+          </tr>
+          <tr>
+            <td>Gender:</td>
+            <td>
+              <label class="checkbox-label"
+                >Male <input type="radio" name="gender" value="male"
+              /></label>
+              <label class="checkbox-label"
+                >Female <input type="radio" name="gender" value="female"
+              /></label>
+            </td>
+          </tr>
+          <tr>
+            <td>Age:</td>
+            <td><input type="number" name="age" /></td>
+          </tr>
+          <tr>
+            <td>Phone Number</td>
+            <td><input type="tel" name="phone" /></td>
+          </tr>
+          <tr>
+            <td>Address</td>
+            <td><textarea name="address" rows="3"></textarea></td>
+          </tr>
+          <tr>
+            <td>State</td>
+            <td><input type="text" name="state" /></td>
+          </tr>
+          <tr>
+            <td>Country</td>
+            <td>
+              <select name="country">
+                <option>Choose your country</option>
+                <option>India</option>
+                <option>USA</option>
+                <option>UK</option>
+                <option>Canada</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Languages known</td>
+            <td>
+              <label class="checkbox-label"
+                >English <input type="checkbox" name="lang" value="English"
+              /></label>
+              <label class="checkbox-label"
+                >Kannada <input type="checkbox" name="lang" value="Kannada"
+              /></label>
+              <label class="checkbox-label"
+                >Hindi <input type="checkbox" name="lang" value="Hindi"
+              /></label>
+              <label class="checkbox-label"
+                >Telugu <input type="checkbox" name="lang" value="Telugu"
+              /></label>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <label class="checkbox-label"
+                >Hereby I declare all the given details are true
+                <input type="checkbox" required
+              /></label>
+            </td>
+          </tr>
+        </table>
+      </form>
+      <p style="text-align: center; margin-top: 15px">
+        Log in to <a href="#">Ethnus</a> website
+      </p>
+    </div>
+    <div class="outside-box">
+      <button type="submit">Register</button>
+    </div>
+  </body>
+</html>
